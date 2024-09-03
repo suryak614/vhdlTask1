@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity carryLookAheadAdder is
-    generic(N: Natural:=4);
+    generic(N: Natural:=2);
     port (
     a: in std_logic_vector(N-1 downto 0);
     b: in std_logic_vector(N-1 downto 0);
@@ -28,7 +28,7 @@ begin
             s(i)<=p(i) xor c(i);
             c(i+1):= g(i)or(p(i)and c(i));
         end loop ; -- identifier
-        co<=c(4);
+        co<=c(N);
     end process;
 end arch ; -- arch
 
