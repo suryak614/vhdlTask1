@@ -12,9 +12,9 @@ entity halfAdder is
 
 end halfAdder;
 
-architecture arch of halfAdder is
+architecture arch1 of halfAdder is
     begin
         s<= a xor b;
         c<= a and b;
-    end arch;
+    end arch1;
 
