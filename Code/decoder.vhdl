@@ -14,10 +14,11 @@ architecture arch of decoder is
         process(s)
             begin
                 case s is 
-                    "00"=> d<="0001";
-                    "01"=> d<="0010";
-                    "10"=> d<= "0100";
-                    "11"=> d<="1000";
+                    when "00"=> d<="0001";
+                    when "01"=> d<="0010";
+                    when "10"=> d<= "0100";
+                    when "11"=> d<="1000";
+                    when others=> d<=(other=>'Z');
                 end case;
             end process; 
 
