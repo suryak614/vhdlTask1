@@ -28,7 +28,7 @@ begin
             s(i)<=p(i) xor c(i);
             c(i+1):= g(i)or(p(i)and c(i));
         end loop ; -- identifier
-        co<=c(N);
+        co<=c(N-1);
     end process;
 end arch ; -- arch
 
