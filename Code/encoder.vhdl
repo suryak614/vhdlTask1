@@ -8,7 +8,6 @@ entity encoder is
   ) ;
 end encoder;
 
-
 architecture arch of encoder is
 
     begin
@@ -26,4 +25,3 @@ architecture arch of encoder is
             end process;
 
 end arch;
-

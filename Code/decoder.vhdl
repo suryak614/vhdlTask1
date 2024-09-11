@@ -18,7 +18,7 @@ architecture arch of decoder is
                     when "01"=> d<="0010";
                     when "10"=> d<= "0100";
                     when "11"=> d<="1000";
-                    when others=> d<=(other=>'Z');
+                    when others => d<=(others=>'Z');
                 end case;
             end process; 
 

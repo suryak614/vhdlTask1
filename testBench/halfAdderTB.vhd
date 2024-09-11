@@ -27,7 +27,7 @@ architecture arch1 of halfAdderTB is
             a<='1';
             b<='1';
 
-            end process;
+        end process;
 
        
     end arch1;
