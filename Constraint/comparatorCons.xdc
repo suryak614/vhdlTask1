@@ -1,6 +1,6 @@
  #Switches
 
-set_property PACKAGE_PIN U9 [get_ports {according[0]}]					
+set_property PACKAGE_PIN U9 [get_ports {a[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {a[0]}]
 
 set_property PACKAGE_PIN U8 [get_ports {a[1]}]					
